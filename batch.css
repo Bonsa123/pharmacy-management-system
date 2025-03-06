@@ -1,0 +1,99 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            padding-top: 70px;
+        }
+        header {
+            margin-top:40px;
+            background-color:#00796b;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+           
+        }
+      
+        main {
+            margin-left: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color:#00796b;;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #e0f7fa;
+        }
+        .search-filter {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .search-filter input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-filter input[type="submit"] {
+            margin-left: 10px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-filter input[type="submit"]:hover {
+            background-color:  #16a085;
+        }
+        .status-active {
+            color: green;
+            font-weight: bold;
+        }
+        .status-expired {
+            color: red;
+            font-weight: bold;
+        }
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            aside {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            main {
+                margin-left: 0;
+            }
+            table {
+                font-size: 14px;
+            }
+        }
+
+ 
+  /* Footer */
+  .footer {
+            background-color:  #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+

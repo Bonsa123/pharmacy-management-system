@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #f0f4f8);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    transition: background 0.5s ease-in-out;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 10px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    flex: 1;
+}
+
+/* Main Content */
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2em;
+    
+}
+h2 {
+    border-bottom: 2px solid #a4c41a;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+/* Adding padding to the main content to avoid overlap */
+main {
+    padding-top: 80px; /* Adjust this value based on your nav height */
+    flex: 1;
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: calc(50% - 12px);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #a4c41a;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #a4c41a, #a4c41a);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(194, 214, 80, 0.4);
+}
+
+button[type="submit"]:hover {
+    background: #778f0b;
+    box-shadow: 0 6px 16px rgba(194, 214, 80, 0.4);
+}
+
+/* Medicine Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #a4c41a;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table tr:hover {
+    background: rgba(255, 111, 97, 0.1);
+    transition: background 0.3s;
+}
+
+/* Cart Table */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Message Styles */
+.message {
+    background: #e9f7fc;
+    border: 1px solid #bee1f4;
+    color: #31708f;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #a4c41a, #a4c41a);
+    color: black;
+    width: 100%;
+    margin-top: auto;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}

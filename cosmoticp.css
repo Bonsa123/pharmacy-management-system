@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto 0;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+select, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #16a085;
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.card {
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+flex: 1;
+min-width: 200px;
+position: relative;
+}
+
+.card h3 {
+font-size: 26px;
+margin-top: 0;
+color: #004d40;
+}
+.card p {
+    font-size: 26px;
+    margin: 0;
+    
+}
+.charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+canvas {
+    width: 400px !important;
+    height: 400px !important;
+}
+#profitPieChart
+
+{   margin-top:30px;
+    width: 300px !important;
+    height: 300px !important;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00796b;
+    color: white;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom */
+    border-radius: 0 0 8px 8px;
+}
+

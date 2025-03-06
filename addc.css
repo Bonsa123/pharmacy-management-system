@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 20px; /* Adjust based on sidebar width */
+    padding: 20px;
+    margin-top: 100px; /* Adjust to start below the navigation bar */
+    flex: 1;
+}
+
+.main-content h1 {
+    color: #00796b;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #16a085;
+}
+
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    nav ul li {
+        margin-right: 30px; /* Reduce margin for larger screens */
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 15px 30px; /* Adjust padding for medium devices */
+    }
+
+    nav ul li {
+        margin-right: 20px; /* Reduce margin for medium devices */
+    }
+
+    .main-content {
+        margin-left: 10px; /* Adjust based on smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    form {
+        padding: 15px; /* Reduce form padding */
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items */
+        padding: 10px 20px; /* Adjust padding for smaller devices */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove left margin */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    form {
+        padding: 10px; /* Reduce form padding */
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 10px; /* Adjust padding for extra small devices */
+    }
+
+    form {
+        max-width: 100%; /* Allow form to take full width */
+        padding: 10px; /* Further reduce padding */
+    }
+}

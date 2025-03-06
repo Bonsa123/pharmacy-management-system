@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+/* Main Content Area */
+.main-content {
+    margin-top: 80px;
+    padding: 30px;
+    transition: margin-top 0.5s ease; /* Smooth content shift */
+}
+
+.main-content h1 {
+    color: #00796b;
+    text-align: center;
+    font-size: 26px;
+    animation: slideIn 1s ease-out; /* Slide in animation */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center; /* Center cards */
+    transition: all 0.3s ease;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #00796b;
+    font-size: 24px;
+}
+
+.card p {
+    color: black;
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+/* Chart Styles */
+.chart-container {
+    display: flex; /* Flexbox to align child elements side by side */
+    justify-content: space-between; /* Optional: Adds space between the charts */
+    align-items: flex-start; /* Aligns charts at the top */
+    width: 100%; /* Ensure the container spans full width */
+    margin: 20px 0; /* Optional: Margin for spacing the container */
+}
+
+.sales-chart,
+.daily-sales-chart,
+.overview-chart {
+    display: flex;
+    margin: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    nav {
+        padding: 15px 20px; /* Adjust padding for tablets */
+    }
+
+    nav ul li {
+        margin-right: 30px; /* Reduce spacing between nav items */
+    }
+
+    .main-content {
+        padding: 20px; /* Adjust padding for tablets */
+    }
+
+    .card {
+        min-width: 220px; /* Reduce minimum width for cards */
+        max-width: 280px; /* Reduce maximum width for cards */
+    }
+
+    .chart-container {
+        flex-direction: column; /* Stack charts vertically on smaller screens */
+    }
+
+    .sales-chart,
+    .daily-sales-chart,
+    .overview-chart {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Adjust margins for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items */
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin for stacked nav items */
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
+
+    .main-content {
+        padding: 15px; /* Further adjust padding for small devices */
+    }
+
+    .card {
+        min-width: 180px; /* Further reduce minimum width for cards */
+        max-width: 250px; /* Further reduce maximum width for cards */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

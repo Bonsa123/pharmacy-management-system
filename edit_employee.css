@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 20px; /* Add some padding around the body */
+}
+
+h1 {
+    color: #00796b; /* Dark text color */
+    text-align: center; /* Center the heading */
+}
+
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    max-width: 400px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    width: 90%; /* Use 90% width on smaller screens */
+}
+
+label {
+    display: block; /* Each label occupies a full line */
+    margin: 15px 0 5px; /* Spacing around labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #00796b; /* Dark grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+input[type="submit"] {
+    background-color: #00796b; /* Green background for the button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Full width button */
+}
+
+input[type="submit"]:hover {
+    background-color: #005b4f; /* Darker green on hover */
+}
+
+a {
+    display: inline-block; /* Align the link as a block */
+    margin-top: 20px; /* Space above the link */
+    text-decoration: none; /* Remove underline */
+    color: #00796b; /* Blue color for the link */
+    text-align: center; /* Center the link */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (600px and up) */
+@media (min-width: 600px) {
+    form {
+        max-width: 80%; /* 80% width on tablets */
+    }
+}
+
+/* For laptops (900px and up) */
+@media (min-width: 900px) {
+    form {
+        max-width: 600px; /* 600px max width on laptops */
+    }
+}
+
+/* For larger screens (1200px and up) */
+@media (min-width: 1200px) {
+    form {
+        max-width: 800px; /* 800px max width on larger screens */
+    }
+}

@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #f0f4f8);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 10px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    flex: 1;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background: #f9f9f9;
+    color: black;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+    outline: none;
+}
+
+form button {
+    padding: 12px 18px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.3);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background: #d65e50;
+    box-shadow: 0 6px 12px rgba(214, 94, 80, 0.3);
+}
+
+/* Messages */
+.message {
+    background: #e9f7fc;
+    border: 1px solid #bee1f4;
+    color: #31708f;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #ff6f61;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table tr:hover {
+    background: rgba(255, 111, 97, 0.1);
+    transition: background 0.3s;
+}
+
+/* Cart and Complete Sale Section */
+h2 {
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    color: #ff6f61;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(50% - 12px);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff6f61, #d65e50);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+button[type="submit"]:hover {
+    background: #d65e50;
+    box-shadow: 0 6px 16px rgba(214, 94, 80, 0.4);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff6f61, #d65e50);
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}

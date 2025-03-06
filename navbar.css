@@ -1,0 +1,158 @@
+/* General Navigation Styles */
+nav {
+    background: #00796b;
+    color: #fff;
+    padding: 20px 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* Desktop Navigation Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #16a085;
+    border-radius: 4px;
+}
+
+/* Dropdown Submenu Styling */
+nav ul ul {
+    display: none;
+    position: absolute;
+    background: #00695c;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin-top: 10px;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Slide down effect */
+}
+
+/* Dropdown List Item Styles */
+nav ul ul li {
+    width: 200px;
+}
+
+nav ul ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul ul li a:hover {
+    background: #16a085;
+}
+
+/* Dropdown Icon Rotation */
+.dropdown-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover > a .dropdown-icon {
+    transform: rotate(180deg); /* Rotate caret icon when submenu opens */
+}
+
+/* Font Awesome Icon Styling */
+nav ul li a i {
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+
+/* Tablet View */
+@media (max-width: 992px) {
+    nav {
+        padding: 15px 30px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul ul {
+        position: static;
+        opacity: 1;
+        transform: none;
+        display: none;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+    .dropdown-icon {
+        margin-left: 10px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0 0 10px 0;
+    }
+
+    nav ul ul li a {
+        padding: 8px 15px;
+    }
+}

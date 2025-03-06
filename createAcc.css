@@ -1,0 +1,100 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('plastic-box-with-different-pills-light-blue-background-top-view-space-text_144356-80594.avif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .login-container h1 {
+            margin-top: 0;
+            color: #00796b;
+            text-align: center;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-container i {
+            color: #00796b;
+            margin-right: 10px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-container input[type="text"]::placeholder,
+        .login-container input[type="password"]::placeholder {
+            color: #aaa;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding-left: 40px; /* Adjusted padding to make space for icons */
+        }
+
+        .login-container button {
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #004d40;
+        }
+
+        .login-container .error {
+            color: red;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .login-container a {
+            color: #00796b;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    
